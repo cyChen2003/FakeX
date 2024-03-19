@@ -1,0 +1,12 @@
+view,
+label,
+swiper-item,
+scroll-view{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}view,
+image,
+input,
+scroll-view,
+swiper,
+swiper-item,
+text,
+textarea,
+video{position:relative;border:0 solid #000;box-sizing:border-box}swiper-item{position:absolute}button{margin:0}.nvue-page-root.data-v-5598a592{background-color:#f8f8f8;padding-bottom:20px}.page-title.data-v-5598a592{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:35rpx}.page-title__wrapper.data-v-5598a592{padding:0 20px;border-bottom-color:#d8d8d8;border-bottom-width:1px}.page-title__text.data-v-5598a592{font-size:16px;height:48px;line-height:48px;color:#bebebe}.title.data-v-5598a592{padding:5px 13px}.uni-form-item__title.data-v-5598a592{font-size:16px;line-height:24px}.uni-input-wrapper.data-v-5598a592{display:flex;padding:8px 13px;flex-direction:row;flex-wrap:nowrap;background-color:#fff}.uni-input.data-v-5598a592{height:28px;line-height:28px;font-size:15px;padding:0;flex:1;background-color:#fff}.uni-icon.data-v-5598a592{font-family:uniicons;font-size:24px;font-weight:400;font-style:normal;width:24px;height:24px;line-height:24px;color:#999}.uni-eye-active.data-v-5598a592{color:#007aff}

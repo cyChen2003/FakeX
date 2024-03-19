@@ -1,0 +1,1 @@
+movable-view{display:flex;align-items:center;justify-content:center;height:150rpx;width:150rpx;background-color:#007aff;color:#fff}movable-area{height:300rpx;width:100%;background-color:#d8d8d8;overflow:hidden}.max{width:500rpx;height:500rpx}

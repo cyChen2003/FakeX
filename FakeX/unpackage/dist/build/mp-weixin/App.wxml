@@ -1,0 +1,1 @@
+<view><u-action-sheet vue-id="c31923fa-1" actions="{{list}}" title="{{title}}" show="{{show}}" bind:__l="__l"></u-action-sheet><u-button bind:click="__e" vue-id="c31923fa-2" data-event-opts="{{[['^click',[['e0']]]]}}" bind:__l="__l" vue-slots="{{['default']}}">打开ActionSheet</u-button></view>

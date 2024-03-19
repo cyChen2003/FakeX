@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uni-row/components/uni-row/uni-row"],{"61c6":function(t,n,u){"use strict";u.r(n);var i=u("87c6"),e=u("922f");for(var r in e)["default"].indexOf(r)<0&&function(t){u.d(n,t,(function(){return e[t]}))}(r);u("7862");var a=u("f0c5"),o=Object(a["a"])(e["default"],i["b"],i["c"],!1,null,null,null,!1,i["a"],void 0);n["default"]=o.exports},7862:function(t,n,u){"use strict";var i=u("8622"),e=u.n(i);e.a},8622:function(t,n,u){},"87c6":function(t,n,u){"use strict";u.d(n,"b",(function(){return i})),u.d(n,"c",(function(){return e})),u.d(n,"a",(function(){}));var i=function(){var t=this.$createElement,n=(this._self._c,Number(this.marginValue)),u=Number(this.marginValue);this.$mp.data=Object.assign({},{$root:{m0:n,m1:u}})},e=[]},9108:function(t,n,u){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var i={name:"uniRow",componentName:"uniRow",options:{virtualHost:!0},props:{type:String,gutter:Number,justify:{type:String,default:"start"},align:{type:String,default:"top"},width:{type:[String,Number],default:750}},created:function(){},computed:{marginValue:function(){return this.gutter?-this.gutter/2:0},typeClass:function(){return"flex"===this.type?"".concat("uni-row--","flex"):""},justifyClass:function(){return"start"!==this.justify?"".concat("uni-row--","flex-justify-").concat(this.justify):""},alignClass:function(){return"top"!==this.align?"".concat("uni-row--","flex-align-").concat(this.align):""}}};n.default=i},"922f":function(t,n,u){"use strict";u.r(n);var i=u("9108"),e=u.n(i);for(var r in i)["default"].indexOf(r)<0&&function(t){u.d(n,t,(function(){return i[t]}))}(r);n["default"]=e.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uni-row/components/uni-row/uni-row-create-component',
+    {
+        'uni_modules/uni-row/components/uni-row/uni-row-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("61c6"))
+        })
+    },
+    [['uni_modules/uni-row/components/uni-row/uni-row-create-component']]
+]);

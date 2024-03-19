@@ -1,0 +1,1 @@
+.example-body{display:flex;padding:10px 15px}.favBtn{margin:0 20rpx 20rpx 0}.example-body-fullWidth{padding:32rpx 0}.example-body-first{display:flex;flex-direction:row;justify-content:flex-start}

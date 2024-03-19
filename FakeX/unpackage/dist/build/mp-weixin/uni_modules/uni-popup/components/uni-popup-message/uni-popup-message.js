@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uni-popup/components/uni-popup-message/uni-popup-message"],{"0bfd":function(e,t,n){},"269e":function(e,t,n){"use strict";n.r(t);var u=n("4b3e"),i=n.n(u);for(var o in u)["default"].indexOf(o)<0&&function(e){n.d(t,e,(function(){return u[e]}))}(o);t["default"]=i.a},"4b3e":function(e,t,n){"use strict";var u=n("4ea4");Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var i=u(n("cdf3")),o={name:"uniPopupMessage",mixins:[i.default],props:{type:{type:String,default:"success"},message:{type:String,default:""},duration:{type:Number,default:3e3},maskShow:{type:Boolean,default:!1}},data:function(){return{}},created:function(){this.popup.maskShow=this.maskShow,this.popup.messageChild=this},methods:{timerClose:function(){var e=this;0!==this.duration&&(clearTimeout(this.timer),this.timer=setTimeout((function(){e.popup.close()}),this.duration))}}};t.default=o},5363:function(e,t,n){"use strict";n.r(t);var u=n("67ef"),i=n("269e");for(var o in i)["default"].indexOf(o)<0&&function(e){n.d(t,e,(function(){return i[e]}))}(o);n("f7eb");var a=n("f0c5"),s=Object(a["a"])(i["default"],u["b"],u["c"],!1,null,null,null,!1,u["a"],void 0);t["default"]=s.exports},"67ef":function(e,t,n){"use strict";n.d(t,"b",(function(){return u})),n.d(t,"c",(function(){return i})),n.d(t,"a",(function(){}));var u=function(){var e=this.$createElement;this._self._c},i=[]},f7eb:function(e,t,n){"use strict";var u=n("0bfd"),i=n.n(u);i.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uni-popup/components/uni-popup-message/uni-popup-message-create-component',
+    {
+        'uni_modules/uni-popup/components/uni-popup-message/uni-popup-message-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("5363"))
+        })
+    },
+    [['uni_modules/uni-popup/components/uni-popup-message/uni-popup-message-create-component']]
+]);

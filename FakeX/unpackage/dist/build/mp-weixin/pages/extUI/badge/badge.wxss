@@ -1,0 +1,1 @@
+.example-body{flex-direction:row;justify-content:flex-start}.uni-badge-left-margin{margin-left:10px}.uni-badge-absolute{margin-left:40px}.box{width:40px;height:40px;display:flex;justify-content:center;align-items:center;text-align:center;background-color:#dcdfe6;color:#fff;font-size:12px}.box-text{text-align:center;color:#fff;font-size:12px}

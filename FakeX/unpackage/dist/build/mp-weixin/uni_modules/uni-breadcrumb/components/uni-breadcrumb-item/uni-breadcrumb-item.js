@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uni-breadcrumb/components/uni-breadcrumb-item/uni-breadcrumb-item"],{"0797":function(t,e,n){"use strict";var r=n("6c1d"),u=n.n(r);u.a},"482c":function(t,e,n){"use strict";n.r(e);var r=n("65da"),u=n("c56e");for(var a in u)["default"].indexOf(a)<0&&function(t){n.d(e,t,(function(){return u[t]}))}(a);n("0797");var c=n("f0c5"),i=Object(c["a"])(u["default"],r["b"],r["c"],!1,null,null,null,!1,r["a"],void 0);e["default"]=i.exports},"65da":function(t,e,n){"use strict";n.d(e,"b",(function(){return r})),n.d(e,"c",(function(){return u})),n.d(e,"a",(function(){}));var r=function(){var t=this.$createElement;this._self._c},u=[]},"6c1d":function(t,e,n){},bec6:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n={data:function(){return{currentPage:""}},options:{virtualHost:!0},props:{to:{type:String,default:""},replace:{type:Boolean,default:!1}},inject:{uniBreadcrumb:{from:"uniBreadcrumb",default:null}},created:function(){var t=getCurrentPages(),e=t[t.length-1];e&&(this.currentPage="/".concat(e.route))},computed:{separator:function(){return this.uniBreadcrumb.separator},separatorClass:function(){return this.uniBreadcrumb.separatorClass}},methods:{navTo:function(){var e=this.to;e&&this.currentPage!==e&&(this.replace?t.redirectTo({url:e}):t.navigateTo({url:e}))}}};e.default=n}).call(this,n("543d")["default"])},c56e:function(t,e,n){"use strict";n.r(e);var r=n("bec6"),u=n.n(r);for(var a in r)["default"].indexOf(a)<0&&function(t){n.d(e,t,(function(){return r[t]}))}(a);e["default"]=u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uni-breadcrumb/components/uni-breadcrumb-item/uni-breadcrumb-item-create-component',
+    {
+        'uni_modules/uni-breadcrumb/components/uni-breadcrumb-item/uni-breadcrumb-item-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("482c"))
+        })
+    },
+    [['uni_modules/uni-breadcrumb/components/uni-breadcrumb-item/uni-breadcrumb-item-create-component']]
+]);

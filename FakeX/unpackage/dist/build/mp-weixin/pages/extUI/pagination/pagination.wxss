@@ -1,0 +1,1 @@
+.example-body{display:block}.btn-view{display:flex;flex-direction:column;padding:15px;text-align:center;background-color:#fff;justify-content:center;align-items:center}.btn-flex{display:flex;flex-direction:row;justify-content:center;align-items:center}.button{margin:20px;width:150px;font-size:14px;color:#333}
