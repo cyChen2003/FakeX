@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "Combox 组合框",
-  "usingComponents": {
-    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
-    "uni-section": "/uni_modules/uni-section/components/uni-section/uni-section",
-    "uni-combox": "/uni_modules/uni-combox/components/uni-combox/uni-combox"
-  }
-}

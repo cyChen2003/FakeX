@@ -6,7 +6,7 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": true,
+    "es6": false,
     "postcss": false,
     "minified": false,
     "newFeature": true,
@@ -19,7 +19,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "3.3.4",
-  "appid": "wx67228a6e0242bd8d",
+  "appid": "touristappid",
   "projectname": "FakeX",
   "condition": {},
   "editorSetting": {

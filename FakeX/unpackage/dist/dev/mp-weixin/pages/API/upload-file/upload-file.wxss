@@ -1,9 +1,0 @@
-
-.image {
-	width: 100%;
-}
-.demo {
-	background: #FFF;
-	padding: 50rpx;
-}
-

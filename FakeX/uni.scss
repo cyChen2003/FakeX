@@ -13,9 +13,9 @@
  */
 
 /* 颜色变量 */
+@import '@/uni_modules/uview-ui/theme.scss';
 
 /* 行为相关颜色 */
-@import '@/uni_modules/uview-ui/theme.scss';//引入uview-ui的样式
 $uni-color-primary: #007aff;
 $uni-color-success: #4cd964;
 $uni-color-warning: #f0ad4e;
@@ -35,14 +35,14 @@ $uni-bg-color-hover:#f1f1f1;//点击状态颜色
 $uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
 
 /* 边框颜色 */
-$uni-border-color:#e5e5e5;
+$uni-border-color:#c8c7cc;
 
 /* 尺寸变量 */
 
 /* 文字尺寸 */
 $uni-font-size-sm:12px;
 $uni-font-size-base:14px;
-$uni-font-size-lg:16;
+$uni-font-size-lg:16px;
 
 /* 图片尺寸 */
 $uni-img-size-sm:20px;

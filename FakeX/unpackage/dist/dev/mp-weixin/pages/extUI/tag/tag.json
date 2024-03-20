@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "Tag 标签",
-  "usingComponents": {
-    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
-    "uni-section": "/uni_modules/uni-section/components/uni-section/uni-section",
-    "uni-tag": "/uni_modules/uni-tag/components/uni-tag/uni-tag"
-  }
-}

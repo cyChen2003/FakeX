@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "DataPicker 级联选择",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
-    "uni-section": "/uni_modules/uni-section/components/uni-section/uni-section",
-    "uni-data-picker": "/uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker"
-  }
-}
