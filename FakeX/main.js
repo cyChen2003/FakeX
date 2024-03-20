@@ -4,8 +4,12 @@ import App from './App'
 import Vue from 'vue'
 import './uni.promisify.adaptor'
 import uView from '@/uni_modules/uview-ui'
-Vue.use(uView)
+import setUserInfo from "./common/setUserInfo.js" //微信用户信息
 
+Vue.use(uView)
+Vue.prototype.$setUserInfo = setUserInfo
+Vue.prototype.$appid = "wx67228a6e0242bd8d"
+Vue.prototype.$secret_key = "bfb77f34225eec17352e8cb3b78ae563"
 
 Vue.config.productionTip = false
 App.mpType = 'app'

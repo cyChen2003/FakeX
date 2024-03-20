@@ -1,7 +1,10 @@
 {
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
-    "u-action-sheet": "/uni_modules/uview-ui/components/u-action-sheet/u-action-sheet",
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u--input": "/uni_modules/uview-ui/components/u--input/u--input",
     "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
   }
 }

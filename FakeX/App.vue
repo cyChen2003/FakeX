@@ -4,6 +4,10 @@
 </style>
 <script>
 	export default {
+		globalData: {
+			appid: "wx67228a6e0242bd8d",
+			secret:"bfb77f34225eec17352e8cb3b78ae563",
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},
