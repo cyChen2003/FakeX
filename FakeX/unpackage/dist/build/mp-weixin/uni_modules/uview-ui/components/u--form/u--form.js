@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uview-ui/components/u--form/u--form"],{"3b5a":function(e,t,n){"use strict";n.r(t);var i=n("487a"),u=n("e6d5");for(var r in u)["default"].indexOf(r)<0&&function(e){n.d(t,e,(function(){return u[e]}))}(r);var a=n("f0c5"),o=Object(a["a"])(u["default"],i["b"],i["c"],!1,null,null,null,!1,i["a"],void 0);t["default"]=o.exports},"487a":function(e,t,n){"use strict";n.d(t,"b",(function(){return i})),n.d(t,"c",(function(){return u})),n.d(t,"a",(function(){}));var i=function(){var e=this.$createElement;this._self._c},u=[]},be29:function(e,t,n){"use strict";(function(e){var i=n("4ea4");Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var u=i(n("3c35")),r={name:"u-form",mixins:[e.$u.mpMixin,u.default,e.$u.mixin],components:{uvForm:function(){Promise.all([n.e("common/vendor"),n.e("uni_modules/uview-ui/components/u-form/u-form")]).then(function(){return resolve(n("b5af"))}.bind(null,n)).catch(n.oe)}},created:function(){this.children=[]},methods:{setRules:function(e){this.$refs.uForm.setRules(e)},validate:function(){return this.setMpData(),this.$refs.uForm.validate()},validateField:function(e,t,n){return this.setMpData(),this.$refs.uForm.validateField(e,t,n)},resetFields:function(){return this.setMpData(),this.$refs.uForm.resetFields()},clearValidate:function(e){return this.setMpData(),this.$refs.uForm.clearValidate(e)},setMpData:function(){this.$refs.uForm.children=this.children}}};t.default=r}).call(this,n("543d")["default"])},e6d5:function(e,t,n){"use strict";n.r(t);var i=n("be29"),u=n.n(i);for(var r in i)["default"].indexOf(r)<0&&function(e){n.d(t,e,(function(){return i[e]}))}(r);t["default"]=u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uview-ui/components/u--form/u--form-create-component',
+    {
+        'uni_modules/uview-ui/components/u--form/u--form-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("3b5a"))
+        })
+    },
+    [['uni_modules/uview-ui/components/u--form/u--form-create-component']]
+]);
