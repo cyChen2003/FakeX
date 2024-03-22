@@ -14,16 +14,12 @@
 				<u--form class="cl" borderBottom="false">
 					<u-form-item borderBottom="false">
 						<u--text text="手机号" color="#000000" prefixIcon="phone"></u--text>
-						<view class='t-input'>
 							<u--input name="phone" placeholder="请输入您的手机号" maxlength="11" border="bottom" v-model="phone" />
-						</view>
 					</u-form-item>
-					<u-form-item>
-						<view class="t-a">
+					<u-form-item borderBottom="false">
 							<u--text text="密码" color="#000000" prefixIcon="lock"></u--text>
 							<u--input type="password" name="code" maxlength="18" placeholder="请输入您的密码"
 								border="bottom" v-model="pwd"/>
-						</view>
 					</u-form-item>
 					<view class="t-button-all">
 						<view class="t-button">
@@ -176,7 +172,7 @@
 
 	.t-login {
 		width: 600rpx;
-		margin: 0 auto;
+		margin: 75rpx auto;
 		font-size: 28rpx;
 		padding-top: 80rpx;
 	}
@@ -248,7 +244,7 @@
 
 	.t-login .t-f {
 		text-align: center;
-		margin: 50rpx 0 0 0;
+		margin: 120rpx 0 0 0;
 		color: #666;
 	}
 
@@ -262,21 +258,20 @@
 		color: #aeaeae;
 	}
 
-	.t-login.t-button-all {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 100rpx;
+	.t-login .t-button-all{
+		margin-top: 120rpx;
 	}
 
 	.t-login .t-button {
-		margin-top: 35rpx;
+		margin-top: 50rpx;
+	}
+	
+
+		.cl {
+		margin-top: 50rpx;
 	}
 
-	/* 	.cl {
-		zoom: 1;
-	}
-
-	.cl:after {
+	/* .cl:after {
 		clear: both;
 		display: block;
 		visibility: hidden;
