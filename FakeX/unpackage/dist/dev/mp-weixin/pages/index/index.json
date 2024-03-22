@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText": "uni-app",
+  "navigationBarTitleText": "FakeX",
   "usingComponents": {
+    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast",
     "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
     "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
     "u--text": "/uni_modules/uview-ui/components/u--text/u--text",

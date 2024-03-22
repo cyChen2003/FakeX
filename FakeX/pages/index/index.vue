@@ -9,31 +9,35 @@
 			</view>
 		</view>
 		<view class="login-view" style="">
+			<u-toast ref="uToast"></u-toast>
 			<view class="t-login">
-				<u--form class="cl">
-					<u-form-item>
-						<view class="t-a">
-							<u--text text="手机号" color="#000000" prefixIcon="phone"></u--text>
-							<u--input type="digit" name="phone" placeholder="请输入您的手机号" maxlength="11" v-model="phone"
-								border="bottom" />
+				<u--form class="cl" borderBottom="false">
+					<u-form-item borderBottom="false">
+						<u--text text="手机号" color="#000000" prefixIcon="phone"></u--text>
+						<view class='t-input'>
+							<u--input name="phone" placeholder="请输入您的手机号" maxlength="11" border="bottom" v-model="phone" />
 						</view>
 					</u-form-item>
 					<u-form-item>
 						<view class="t-a">
-							<u--text  text="密码" color="#000000" prefixIcon="lock"></u--text>
-							<u--input type="password" name="code" maxlength="18" placeholder="请输入您的密码" v-model="pwd" border="bottom"/>
+							<u--text text="密码" color="#000000" prefixIcon="lock"></u--text>
+							<u--input type="password" name="code" maxlength="18" placeholder="请输入您的密码"
+								border="bottom" v-model="pwd"/>
 						</view>
 					</u-form-item>
-					<u-button @click="login()" type="primary" shape="circle">登 录</u-button>
-					<u-button shape = "circle" open-type="getUserInfo" @getuserinfo="wxGetUserInfo">注 册</u-button>
+					<view class="t-button-all">
+						<view class="t-button">
+							<u-button @click="login()" type="primary" shape="circle">登 录</u-button>
+						</view>
+						<view class="t-button">
+							<u-button shape="circle" open-type="getUserInfo" @getuserinfo="wxGetUserInfo">注 册</u-button>
+						</view>
+					</view>
 				</u--form>
 				<view class="t-f"><text>—————— 第三方账号登录 ——————</text></view>
 				<view class="t-e cl">
 					<view class="t-g" @tap="wxLogin()">
-						<image src="https://zhoukaiwen.com/img/loginImg/wx.png" ></image>
-					</view>
-					<view class="t-g" @tap="zfbLogin()">
-						<image src="https://zhoukaiwen.com/img/loginImg/qq.png"></image>
+						<image src="https://zhoukaiwen.com/img/loginImg/wx.png"></image>
 					</view>
 				</view>
 			</view>
@@ -63,51 +67,64 @@
 					return;
 				}
 				if (!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(that.phone)) {
-					uni.showToast({
-						title: '请输入正确手机号',
-						icon: 'none'
+					this.$refs.uToast.show({
+						type: 'error',
+						message: '请输入正确的手机号',
+						position: 'top',
+						iconUrl: 'https://cdn.uviewui.com/uview/demo/toast/error.png',
 					});
 					return;
 				}
 				if (!that.pwd) {
-					uni.showToast({
-						title: '请输入您的密码',
-						icon: 'none'
+					this.$refs.uToast.show({
+						type: 'error',
+						message: '请输入您的密码',
+						position: 'top',
+						iconUrl: 'https://cdn.uviewui.com/uview/demo/toast/error.png',
 					});
 					return;
 				}
-				uni.showToast({
-					title: '登录成功！',
-					icon: 'none'
+				this.$refs.uToast.show({
+					type: 'success',
+					message: '登录成功',
+					position: 'top',
+					iconUrl: 'https://cdn.uviewui.com/uview/demo/toast/success.png',
+					// 	url: '/pages/index/index'结束后跳转
 				});
 			},
 			//注册按钮点击
 			reg() {
-				
-				uni.showToast({
-					title: '注册跳转',
-					icon: 'none'
-				});
+
+				this.$refs.uToast.show({
+					type: 'default',
+					message: '跳转注册页面',
+					position: 'top',
+					// 	url: '/pages/index/index'结束后跳转
+				}, );
 			},
 			//等三方微信登录
 			async wxLogin() {
 				try {
-				    const userInfo = await setUserInfo();
-				    console.log("用户信息：", userInfo);
-				    //如果userInfo有值，则弹出提示框
+					const userInfo = await setUserInfo();
+					console.log("用户信息：", userInfo);
+					//如果userInfo有值，则弹出提示框
 					if (userInfo) {
-				      uni.showToast({
-				        title: "用户信息：" + JSON.stringify(userInfo),
-				        icon: "none",
-				      });
-				    }
-				  } catch (error) {
-				    console.error("获取用户信息失败：", error);
-				    uni.showToast({
-				      title: "获取用户信息失败",
-				      icon: "error",
-				    });
-				  }
+						this.$refs.uToast.show({
+							type: "success",
+							message: "微信登录成功",
+							position: "top",
+							iconUrl: "https://cdn.uviewui.com/uview/demo/toast/success.png",
+						});
+					}
+				} catch (error) {
+					console.error("获取用户信息失败：", error);
+					this.$refs.uToast.show({
+						type: "error",
+						message: "获取用户信息失败",
+						position: "top",
+						iconUrl: "https://cdn.uviewui.com/uview/demo/toast/error.png",
+					});
+				}
 			},
 			//第三方支付宝登录
 			zfbLogin() {
@@ -121,7 +138,6 @@
 			},
 		},
 	}
-	
 </script>
 <style>
 	.txt {
@@ -178,14 +194,12 @@
 	.t-login input {
 		height: 90rpx;
 		line-height: 90rpx;
-		margin-bottom: 50rpx;
+/* 		margin-bottom: 50rpx; */
 		border-bottom: 1px solid $u-border-color;
 		font-size: 28rpx;
 	}
 
-	.t-login .t-a {
-		position: relative;
-	}
+
 
 	.t-b {
 		text-align: left;
@@ -218,12 +232,13 @@
 	.t-login .t-e {
 		text-align: center;
 		width: 250rpx;
-		margin: 80rpx auto 0;
+		margin: 40rpx auto 0;
 	}
 
 	.t-login .t-g {
+
 		float: left;
-		width: 50%;
+		width: 100%;
 	}
 
 	.t-login .t-e image {
@@ -233,7 +248,7 @@
 
 	.t-login .t-f {
 		text-align: center;
-		margin: 150rpx 0 0 0;
+		margin: 50rpx 0 0 0;
 		color: #666;
 	}
 
@@ -247,7 +262,17 @@
 		color: #aeaeae;
 	}
 
-	.cl {
+	.t-login.t-button-all {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100rpx;
+	}
+
+	.t-login .t-button {
+		margin-top: 35rpx;
+	}
+
+	/* 	.cl {
 		zoom: 1;
 	}
 
@@ -257,5 +282,5 @@
 		visibility: hidden;
 		height: 0;
 		content: '\20';
-	}
+	} */
 </style>

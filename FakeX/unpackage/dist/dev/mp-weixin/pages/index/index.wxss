@@ -40,119 +40,127 @@
 
 
 .txt {
-	font-size: 32rpx;
-	font-weight: bold;
-	color: $u-primary;
+		font-size: 32rpx;
+		font-weight: bold;
+		color: $u-primary;
 }
 .img-a {
-	width: 100%;
-	height: 450rpx;
-	background-image: url(https://zhoukaiwen.com/img/loginImg/head.png);
-	background-size: 100%;
+		width: 100%;
+		height: 450rpx;
+		background-image: url(https://zhoukaiwen.com/img/loginImg/head.png);
+		background-size: 100%;
 }
 .reg {
-	font-size: 28rpx;
-	color: #fff;
-	height: 90rpx;
-	line-height: 90rpx;
-	border-radius: 50rpx;
-	font-weight: bold;
-	background: #f5f6fa;
-	color: #000000;
-	text-align: center;
-	margin-top: 30rpx;
+		font-size: 28rpx;
+		color: #fff;
+		height: 90rpx;
+		line-height: 90rpx;
+		border-radius: 50rpx;
+		font-weight: bold;
+		background: #f5f6fa;
+		color: #000000;
+		text-align: center;
+		margin-top: 30rpx;
 }
 .login-view {
-	width: 100%;
-	position: relative;
-	margin-top: -120rpx;
-	background-color: #ffffff;
-	border-radius: 8% 8% 0% 0;
+		width: 100%;
+		position: relative;
+		margin-top: -120rpx;
+		background-color: #ffffff;
+		border-radius: 8% 8% 0% 0;
 }
 .t-login {
-	width: 600rpx;
-	margin: 0 auto;
-	font-size: 28rpx;
-	padding-top: 80rpx;
+		width: 600rpx;
+		margin: 0 auto;
+		font-size: 28rpx;
+		padding-top: 80rpx;
 }
 .t-login button {
-	font-size: 28rpx;
-	background: #2796f2;
-	color: #fff;
-	height: 90rpx;
-	line-height: 90rpx;
-	border-radius: 50rpx;
-	font-weight: bold;
+		font-size: 28rpx;
+		background: #2796f2;
+		color: #fff;
+		height: 90rpx;
+		line-height: 90rpx;
+		border-radius: 50rpx;
+		font-weight: bold;
 }
 .t-login input {
-	height: 90rpx;
-	line-height: 90rpx;
-	margin-bottom: 50rpx;
-	border-bottom: 1px solid $u-border-color;
-	font-size: 28rpx;
-}
-.t-login .t-a {
-	position: relative;
+		height: 90rpx;
+		line-height: 90rpx;
+/* 		margin-bottom: 50rpx; */
+		border-bottom: 1px solid $u-border-color;
+		font-size: 28rpx;
 }
 .t-b {
-	text-align: left;
-	font-size: 42rpx;
-	color: #ffffff;
-	padding: 130rpx 0 0 70rpx;
-	font-weight: bold;
-	line-height: 70rpx;
+		text-align: left;
+		font-size: 42rpx;
+		color: #ffffff;
+		padding: 130rpx 0 0 70rpx;
+		font-weight: bold;
+		line-height: 70rpx;
 }
 .t-login .t-c {
-	position: absolute;
-	right: 22rpx;
-	top: 22rpx;
-	background: #5677fc;
-	color: #fff;
-	font-size: 24rpx;
-	border-radius: 50rpx;
-	height: 50rpx;
-	line-height: 50rpx;
-	padding: 0 25rpx;
+		position: absolute;
+		right: 22rpx;
+		top: 22rpx;
+		background: #5677fc;
+		color: #fff;
+		font-size: 24rpx;
+		border-radius: 50rpx;
+		height: 50rpx;
+		line-height: 50rpx;
+		padding: 0 25rpx;
 }
 .t-login .t-d {
-	text-align: center;
-	color: #999;
-	margin: 80rpx 0;
+		text-align: center;
+		color: #999;
+		margin: 80rpx 0;
 }
 .t-login .t-e {
-	text-align: center;
-	width: 250rpx;
-	margin: 80rpx auto 0;
+		text-align: center;
+		width: 250rpx;
+		margin: 40rpx auto 0;
 }
 .t-login .t-g {
-	float: left;
-	width: 50%;
+
+		float: left;
+		width: 100%;
 }
 .t-login .t-e image {
-	width: 50rpx;
-	height: 50rpx;
+		width: 50rpx;
+		height: 50rpx;
 }
 .t-login .t-f {
-	text-align: center;
-	margin: 150rpx 0 0 0;
-	color: #666;
+		text-align: center;
+		margin: 50rpx 0 0 0;
+		color: #666;
 }
 .t-login .t-f text {
-	margin-left: 20rpx;
-	color: #aaaaaa;
-	font-size: 27rpx;
+		margin-left: 20rpx;
+		color: #aaaaaa;
+		font-size: 27rpx;
 }
 .t-login .uni-input-placeholder {
-	color: #aeaeae;
+		color: #aeaeae;
 }
-.cl {
-	zoom: 1;
+.t-login.t-button-all {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100rpx;
 }
-.cl:after {
-	clear: both;
-	display: block;
-	visibility: hidden;
-	height: 0;
-	content: '\20';
+.t-login .t-button {
+		margin-top: 35rpx;
 }
+
+	/* 	.cl {
+		zoom: 1;
+	}
+
+	.cl:after {
+		clear: both;
+		display: block;
+		visibility: hidden;
+		height: 0;
+		content: '\20';
+	} */
 
